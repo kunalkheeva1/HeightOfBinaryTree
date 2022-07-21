@@ -37,6 +37,21 @@ public class HeightOfBinaryTree {
         }return level;
 
     }
+    /* Alternate approach with recursive code
+    int height(Node node){
+    if(node == null) return 0;
+
+    int leftSide = height(root.left);
+    int rightSide = height(root.right);
+    return Math.max(leftSide, rightSide) +1;      //+1 is for the first level
+
+
+
+    }
+
+
+
+     */
 
 
 
